@@ -1,0 +1,47 @@
+{
+  "Index": {
+    "site": "Real estate"
+  },
+
+  "COMP_Header": {
+    "HOME": "Home",
+    "ABOUT_US": "About Us",
+    "ADOPT_A_PET": "Adopt A Pet",
+    "CONTACT_US": "Contact Us"
+  },
+  "COMP_Custom404": {
+    "BACK_TO_HOME": " Back To Home  "
+  },
+  "COMP_Home_Banner": {
+    "ANIMAL_CONTROL": "24/7 ANIMAL POISON CONTROL CENTER  ",
+    "A_FULL_HELP": "A Full Range of Services for",
+    "ANIMALS": "a call away",
+    "FREE_APPLIES": " $85 incident fee applies"
+  },
+  "COMP_Contact_us": {
+    "NAME": "Enter Your Name",
+    "EMAIL": "Enter Your Email",
+    "ENTER_YOUR_MESSAGE": "Enter Your Message",
+    "SUBMIT": "Submit",
+    "REQUIRED_NAME": "Please Enter Your Name",
+    "REQUIRED_MESSAGE": "Please Enter Your Message",
+    "REQUIRED_EMAIL": "Please Enter Your Email",
+    "NAME_RGX": "Must be 5 characters or less",
+    "MSG_RGX": "Must be 10 characters or lesss",
+    "EMAIL_RGX": "Invalid email addresss",
+    "CREATE_PROFILE": "Create Profile",
+    "WILL_CONTACT_YOU": "We have sent Message your email and will contack you backs",
+    "BACK_TO_HOME": " Back To Home  ",
+    "CREATED": "Your Profile Created Successfully"
+  },
+  "COMP_Footer": {
+    "SUMMARY": "Our highly skilled technicians will meticulously scuff away grease deposits and make certain that all waste is pumped out completely.",
+    "LINKS": "Quick Links",
+    "ABOUT_US": "About Us",
+    "FAQ": "FAQ",
+    "CONTACT_US": "Contact us",
+    "FOLLOW_US": "Follow Us",
+
+    "Contacts": "Contacts "
+  }
+}
