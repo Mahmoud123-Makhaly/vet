@@ -1,8 +1,9 @@
 import React, { ReactNode } from 'react';
-import { Card, CardBody, CardHeader, CardImg, CardImgOverlay, CardProps, CardText } from 'reactstrap';
+import { Card, CardBody, CardHeader, CardImgOverlay, CardProps, CardText } from 'reactstrap';
 import { Link } from '@navigation';
-import ImageMaker from '../image-maker/ImageMaker';
-
+import { ImageMaker } from '@components';
+{
+}
 export interface ICardMakerProps extends CardProps {
   img?: string;
   imgWidth?: number;

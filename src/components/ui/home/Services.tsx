@@ -1,10 +1,12 @@
 'use client';
 import React from 'react';
 import { Col, Row } from 'reactstrap';
+
+import { Link } from '@navigation';
+
 import { CardMaker } from '@components';
 import { useLocale } from 'next-intl';
 import { services } from './data';
-import Link from 'next/link';
 
 const Services = () => {
   const locale: 'ar' | 'en' = useLocale() as 'ar' | 'en';

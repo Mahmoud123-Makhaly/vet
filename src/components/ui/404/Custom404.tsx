@@ -1,8 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 
 import { useTranslate } from '@app/hooks';
 import { Link } from '@navigation';
-import Image from 'next/image';
 
 const Custom404 = () => {
   const t = useTranslate('COMP_Custom404');

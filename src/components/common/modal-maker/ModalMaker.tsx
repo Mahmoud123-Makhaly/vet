@@ -1,6 +1,6 @@
 'use client';
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React from 'react';
+import { Modal } from 'reactstrap';
 
 interface IModalMaker {
   isOpen: boolean;

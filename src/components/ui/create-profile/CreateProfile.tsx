@@ -1,7 +1,6 @@
 'use client';
 import { ModalBody, ModalFooter } from 'reactstrap';
 
-// export default ContactUs;
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';

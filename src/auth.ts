@@ -1,9 +1,7 @@
 import type { AuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-import { DTO } from '@tot/core/types';
-import { Actions } from '@libs/actions';
-
+ 
 const useSecureCookies = process.env.NEXTAUTH_URL?.startsWith('https://');
 const cookiePrefix = process.env.SITE_NAME?.replace(' ', '-');
 //NextAuth Options: https://next-auth.js.org/configuration/options#providers

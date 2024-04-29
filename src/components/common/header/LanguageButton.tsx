@@ -4,8 +4,7 @@ import { useLocale } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 
 import { usePathname, useRouter } from '@navigation';
-import { Button } from 'reactstrap';
-import Image from 'next/image';
+ import Image from 'next/image';
 
 const LanguageButton = () => {
   const router = useRouter();
