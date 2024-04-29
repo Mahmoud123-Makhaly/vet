@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import 'primereact/resources/themes/lara-light-cyan/theme.css';
 import { NextIntlClientProvider } from 'next-intl';
-import AuthProvider from '../../AuthProvider';
 
 import '@style';
 import { Footer, Header } from '@components';
@@ -34,15 +33,13 @@ export default async function RootLayout(props: Props) {
     >
       <body dir={params.locale === 'en' ? 'ltr' : 'rtl'}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-          <AuthProvider>
-            <header>
-              <Header />
-            </header>
-            <main className="min-vh-100">{children}</main>
-            <footer className="mt-5">
-              <Footer />
-            </footer>
-          </AuthProvider>
+          <header>
+            <Header />
+          </header>
+          <main className="min-vh-100">{children}</main>
+          <footer className="mt-5">
+            <Footer />
+          </footer>
         </NextIntlClientProvider>
       </body>
     </html>
