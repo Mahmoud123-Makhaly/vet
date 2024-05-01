@@ -7,8 +7,8 @@ const HomeBanner = () => {
   const t = useTranslate('COMP_Home_Banner');
 
   return (
-    <div className="home-banner ">
-      <Container className="h-100">
+    <div className="home-banner py-5">
+      <Container className="h-100 py-5">
         <Row className=" align-items-center h-100">
           <Col md={6}>
             <div className="text-primary">
