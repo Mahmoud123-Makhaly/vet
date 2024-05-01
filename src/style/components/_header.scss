@@ -32,3 +32,8 @@
     }
   }
 }
+.flex-header .nav .nav-link {
+  @include for-phone {
+    font-size: 10px;
+  }
+}

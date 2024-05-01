@@ -8,6 +8,8 @@ import clsx from 'clsx';
 
 import { useTranslate } from '@app/hooks';
 import LanguageButton from './LanguageButton';
+import OffcanvasMaker from './OddcanvasMaker';
+import ImageMaker from '../image-maker/ImageMaker';
 
 const Header = () => {
   const t = useTranslate('COMP_Header');
@@ -32,7 +34,7 @@ const Header = () => {
           {links.map((link, index) => {
             const navLinkPathname = link.href.slice(1);
             return (
-              <Nav key={index} className="d-md-block d-none">
+              <Nav key={index} className="d-md-block ">
                 <NavLink
                   href={link.href || undefined}
                   className={`${link.className} ${clsx({
@@ -54,6 +56,39 @@ const Header = () => {
             <i className="fa-solid fa-bars text-primary"></i>
           </Button>
         </div>
+        <OffcanvasMaker
+          header={
+            <Link href="/" className="width-80">
+              <ImageMaker src="/images/header/logo.jpg" />
+            </Link>
+          }
+          canvasBody={
+            <Nav>
+              {links.map((link, index) => {
+                const navLinkPathname = link.href.slice(1);
+                return (
+                  <Nav key={index} className="d-md-block d-none">
+                    <NavLink
+                      href={link.href || undefined}
+                      className={`${link.className} ${clsx({
+                        active: currentPathname === navLinkPathname,
+                      })}`}
+                      onClick={() => {
+                        setNavMenu(navMenu === `${index}` ? '' : `${index}`);
+                      }}
+                    >
+                      {link.name}
+                    </NavLink>
+                  </Nav>
+                );
+              })}
+            </Nav>
+          }
+          direction="end"
+          isOpen={canvasToggler}
+          offcavasToggler={() => setCanvasToggler(!canvasToggler)}
+          closeIcon={<i className="fa-solid fa-xmark font-20 text-black"></i>}
+        />
       </Container>
     </header>
   );
